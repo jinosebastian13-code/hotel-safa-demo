@@ -20,6 +20,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 </head>
 <body>
 
+<!-- Navbar (sit on top) -->
 <div class="w3-top w3-hide-small">
   <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
     <a href="#" class="w3-bar-item w3-button">HOME</a>
@@ -29,9 +30,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   </div>
 </div>
   
+<!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
   <div class="w3-display-bottomleft w3-padding">
-    <span class="w3-tag w3-xlarge">Open from 11am to 11pm</span>
+    <span class="w3-tag w3-xlarge">Open from 7am to 10pm</span>
   </div>
   <div class="w3-display-middle w3-center">
     <span class="w3-text-white w3-hide-small" style="font-size:100px">HOTEL SAFA</span>
@@ -40,6 +42,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   </div>
 </header>
 
+<!-- Menu Container -->
 <div class="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
   <div class="w3-content">
   
@@ -49,63 +52,77 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
         <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Starters</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'MainCourse');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Main Course</div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Main & Biryani</div>
       </a>
       <a href="javascript:void(0)" onclick="openMenu(event, 'Breads');">
-        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Breads</div>
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-red">Breads & South Indian</div>
       </a>
     </div>
 
+    <!-- Tab 1: Starters -->
     <div id="Starters" class="w3-container menu w3-padding-32 w3-white">
       <h1><b>Chicken Fry [4 Pieces]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
-      <p class="w3-text-grey">Crispy fried chicken seasoned with traditional spices</p>
       <hr>
    
       <h1><b>Chicken Perattu [3 Pieces]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
-      <p class="w3-text-grey">Kerala style chicken roast coated in thick, spicy masala gravy</p>
+      <hr>
+
+      <h1><b>Chilli Chicken Dry [Quarter]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
       <hr>
       
       <h1><b>Beef Roasted [Quarter]</b> <span class="w3-tag w3-red w3-round">Popular!</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
-      <p class="w3-text-grey">Slow-roasted beef chunks with coconut chunks and curry leaves</p>
       <hr>
 
       <h1><b>Chilli Beef Dry [Quarter]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
-      <p class="w3-text-grey">Spicy and savory beef dry fry tossed with green chillies and onions</p>
+      <hr>
+
+      <h1><b>Beef Dry Fry [Quarter]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
     </div>
 
+    <!-- Tab 2: Main Course & Biryani -->
     <div id="MainCourse" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Malabar Chicken Dum Biryani</b> <span class="w3-tag w3-red w3-round">Must Try</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹208</span></h1>
-      <p class="w3-text-grey">Authentic Malabar biryani made with fragrant kaima rice and juicy chicken layers</p>
+      <h1><b>Malabar Chicken Dum Biryani [2 Pieces]</b> <span class="w3-tag w3-red w3-round">Must Try</span> <span class="w3-right w3-tag w3-dark-grey w3-round">₹208</span></h1>
+      <hr>
+
+      <h1><b>Chicken Biryani [2 Pieces]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
       <hr>
    
+      <h1><b>Chicken Curry [3 Pieces]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
+      <hr>
+
       <h1><b>Malabar Chicken Curry [3 Pieces]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
-      <p class="w3-text-grey">Rich, roasted coconut milk gravy infused with authentic coastal spices</p>
       <hr>
       
       <h1><b>Beef Curry [Quarter]</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹156</span></h1>
-      <p class="w3-text-grey">Traditional home-style spicy beef curry perfect for parottas</p>
     </div>
 
+    <!-- Tab 3: Breads & South Indian -->
     <div id="Breads" class="w3-container menu w3-padding-32 w3-white">
-      <h1><b>Kerala Parotta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
-      <p class="w3-text-grey">Flaky, multi-layered soft flatbread</p>
-      <hr>
-   
-      <h1><b>Appam / Idiyappam</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
-      <p class="w3-text-grey">Lace-edged rice crepes / steamed rice string hoppers</p>
-      <hr>
-      
-      <h1><b>Pathiri</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹10.40</span></h1>
-      <p class="w3-text-grey">Soft, thin pancake made of roasted rice flour</p>
+      <h1><b>Parotta</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
       <hr>
       
       <h1><b>Chapati</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
-      <p class="w3-text-grey">Whole wheat soft flatbread</p>
+      <hr>
+
+      <h1><b>Idiyappam</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
+      <hr>
+   
+      <h1><b>Appam</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
+      <hr>
+
+      <h1><b>Orotti</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
+      <hr>
+
+      <h1><b>Veeshappam</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹13</span></h1>
+      <hr>
+      
+      <h1><b>Pathiri</b> <span class="w3-right w3-tag w3-dark-grey w3-round">₹10.40</span></h1>
     </div><br>
 
   </div>
 </div>
 
+<!-- About Container -->
 <div class="w3-container w3-padding-64 w3-red w3-grayscale w3-xlarge" id="about">
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">About Us</h1>
@@ -116,21 +133,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
     <h1><b>Opening Hours</b></h1>
     
     <div class="w3-row">
-      <div class="w3-col s6">
-        <p>Mon & Tue: 11:00am - 11:00pm</p>
-        <p>Wednesday: 11:00am - 11:00pm</p>
-        <p>Thursday: 11:00am - 11:00pm</p>
-      </div>
-      <div class="w3-col s6">
-        <p>Friday: 2:00pm - 12:00am</p>
-        <p>Saturday: 11:00am - 12:00am</p>
-        <p>Sunday: 11:00am - 11:00pm</p>
+      <div class="w3-col s12 w3-center">
+        <p>Everyday: 7:00am - 10:00pm</p>
       </div>
     </div>
     
   </div>
 </div>
 
+<!-- Contact -->
 <div class="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge" id="contact">
   <div class="w3-content">
     <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">Contact</h1>
@@ -146,6 +157,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
   </div>
 </div>
 
+<!-- Footer -->
 <footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
   <p>Hotel Safa &copy; 2026</p>
 </footer>
